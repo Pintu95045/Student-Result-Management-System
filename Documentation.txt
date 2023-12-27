@@ -1,0 +1,76 @@
+Student Result Management System.
+
+
+Overview
+The Student Result Management System is a Java-based desktop application designed to facilitate the management of student records and results. The system allows teachers to register new students, add and update student results, and view both individual student records and the overall results of all students. Additionally, students can view their individual results using their roll numbers.
+
+Features
+Add New Student:
+Teachers can add new students to the system by providing relevant details such as name, roll number, and course.
+
+Add Result:
+Teachers can add or update results for registered students. The results include information such as subject-wise grades or marks.
+
+Registered Student:
+Provides a view of all registered students, including their basic information.
+
+All Student Result:
+Displays the overall results of all students, allowing teachers to analyze the performance of the entire class.
+
+View Individual Result:
+Students can view their individual results by entering their roll number.
+
+Logout:
+Allows users to log out of the system securely.
+
+Technologies Used
+Programming Language: Java
+GUI Library: Java Swing
+Database: MySQL
+Database Connectivity: JDBC (Java Database Connectivity)
+External Library: NetBeans GUI Builder, Protean (for enhanced JTable functionality)
+
+Project Structure
+The project is structured into several Java classes, each serving a specific purpose:
+
+adminIndex.java:
+Main entry point for the application. Handles user authentication and navigation to different modules.
+
+adminHome.java:
+Home page for the admin user. Provides options to navigate to different functionalities.
+
+addResult.java:
+Allows teachers to add or update student results.
+
+registeredStudent.java:
+Displays a table of all registered students.
+
+result.java:
+Displays a table of overall results for all students.
+
+studentResult.java:
+Allows students to view their individual results based on their roll number.
+
+Database Configuration
+Database Name: SRMS (Student Result Management System)
+Tables:
+student:
+Fields: roll_number, name, course
+result:
+Fields: roll_number, subject1, subject2, subject3
+
+How to Run
+
+Database Setup:
+Ensure that MySQL is installed, and create a database named "SRMS."
+Create tables as specified in the documentation.
+
+IDE Setup:
+Import the project into an IDE (e.g., NetBeans).
+Set up the MySQL JDBC driver in the project.
+
+Run:
+Run the adminIndex.java file to start the application.
+
+Conclusion
+The Student Result Management System provides an intuitive and efficient way for teachers to manage student records and results. The addition of the "View Individual Result" feature allows students to access their results easily.
